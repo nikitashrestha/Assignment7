@@ -4,6 +4,10 @@
     display: table;
 }
 
+body{
+    background-color: black;
+}
+
 .game-container{
     width: 1000px;
     height: 500px;
@@ -29,9 +33,9 @@
     width:214px;
     height: 450px;
     margin: 0 auto;
-    background-color: black;
     position: relative;
     overflow: hidden;
+    border: 2px solid white;
     /* z-index: 1; */
 }
 

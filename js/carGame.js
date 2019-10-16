@@ -443,10 +443,6 @@ class Game{
                     if(diff1 <= 100){
                         recharger.y += diff1;
                     }
-                    var diff2 = recharger.y - that.obstacles[that.obstacles.length-1];
-                    if(diff2 < CARHEIGHT){
-                        that.obstacles[that.obstacles.length-1].y+=diff2;
-                    }
                 }
                 that.recharger.push(recharger);
             }
@@ -513,6 +509,7 @@ class Game{
                 bullet = new Bullet(this.road,this.player);
                 bullet.move();
                 this.bullet.push(bullet);
+                console.log(this.bullet.length);
             }
         } 
     }
